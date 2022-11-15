@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4BA5C422913AA8000567BC1 /* PoCIVSChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA5C412913AA8000567BC1 /* PoCIVSChatApp.swift */; };
+		D4BA5C442913AA8000567BC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA5C432913AA8000567BC1 /* ContentView.swift */; };
+		D4BA5C462913AA8100567BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BA5C452913AA8100567BC1 /* Assets.xcassets */; };
+		D4BA5C492913AA8100567BC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BA5C482913AA8100567BC1 /* Preview Assets.xcassets */; };
+		D4BA5C512913AC3E00567BC1 /* AmazonIVSChatMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BA5C502913AC3E00567BC1 /* AmazonIVSChatMessaging.xcframework */; };
+		D4BA5C522913AC3E00567BC1 /* AmazonIVSChatMessaging.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4BA5C502913AC3E00567BC1 /* AmazonIVSChatMessaging.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D4BA5C56291401BF00567BC1 /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA5C55291401BF00567BC1 /* TokenRequest.swift */; };
+		D4BA5C59291407CE00567BC1 /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA5C58291407CE00567BC1 /* SendButton.swift */; };
+		D4BA5C5B29140A2000567BC1 /* MessageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA5C5A29140A1F00567BC1 /* MessageBar.swift */; };
+		D4BA5C5E29140C5900567BC1 /* ChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA5C5D29140C5900567BC1 /* ChatDataSource.swift */; };
+		D4BA5C6029140E3E00567BC1 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA5C5F29140E3E00567BC1 /* MessageRow.swift */; };
+		D4BA5C6229140F1B00567BC1 /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BA5C6129140F1B00567BC1 /* MessageList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4BA5C532913AC3E00567BC1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D4BA5C522913AC3E00567BC1 /* AmazonIVSChatMessaging.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D4BA5C3E2913AA8000567BC1 /* PoCIVSChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoCIVSChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BA5C412913AA8000567BC1 /* PoCIVSChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoCIVSChatApp.swift; sourceTree = "<group>"; };
+		D4BA5C432913AA8000567BC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4BA5C452913AA8100567BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4BA5C482913AA8100567BC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4BA5C502913AC3E00567BC1 /* AmazonIVSChatMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AmazonIVSChatMessaging.xcframework; path = ../../../../Downloads/AmazonIVSChatMessaging.xcframework; sourceTree = "<group>"; };
+		D4BA5C55291401BF00567BC1 /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		D4BA5C58291407CE00567BC1 /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
+		D4BA5C5A29140A1F00567BC1 /* MessageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageBar.swift; path = PoCIVSChat/Components/MessageBar.swift; sourceTree = SOURCE_ROOT; };
+		D4BA5C5D29140C5900567BC1 /* ChatDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatDataSource.swift; path = PoCIVSChat/ViewModels/ChatDataSource.swift; sourceTree = SOURCE_ROOT; };
+		D4BA5C5F29140E3E00567BC1 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageRow.swift; path = PoCIVSChat/Components/MessageRow.swift; sourceTree = SOURCE_ROOT; };
+		D4BA5C6129140F1B00567BC1 /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageList.swift; path = PoCIVSChat/Components/MessageList.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4BA5C3B2913AA8000567BC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA5C512913AC3E00567BC1 /* AmazonIVSChatMessaging.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4BA5C352913AA8000567BC1 = {
+			isa = PBXGroup;
+			children = (
+				D4BA5C402913AA8000567BC1 /* PoCIVSChat */,
+				D4BA5C3F2913AA8000567BC1 /* Products */,
+				D4BA5C4F2913AC3E00567BC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D4BA5C3F2913AA8000567BC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA5C3E2913AA8000567BC1 /* PoCIVSChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4BA5C402913AA8000567BC1 /* PoCIVSChat */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA5C5C29140C3600567BC1 /* ViewModels */,
+				D4BA5C57291407BB00567BC1 /* Components */,
+				D4BA5C54291401A900567BC1 /* Models */,
+				D4BA5C412913AA8000567BC1 /* PoCIVSChatApp.swift */,
+				D4BA5C432913AA8000567BC1 /* ContentView.swift */,
+				D4BA5C452913AA8100567BC1 /* Assets.xcassets */,
+				D4BA5C472913AA8100567BC1 /* Preview Content */,
+			);
+			path = PoCIVSChat;
+			sourceTree = "<group>";
+		};
+		D4BA5C472913AA8100567BC1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA5C482913AA8100567BC1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4BA5C4F2913AC3E00567BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA5C502913AC3E00567BC1 /* AmazonIVSChatMessaging.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4BA5C54291401A900567BC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA5C55291401BF00567BC1 /* TokenRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4BA5C57291407BB00567BC1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA5C58291407CE00567BC1 /* SendButton.swift */,
+				D4BA5C5A29140A1F00567BC1 /* MessageBar.swift */,
+				D4BA5C5F29140E3E00567BC1 /* MessageRow.swift */,
+				D4BA5C6129140F1B00567BC1 /* MessageList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D4BA5C5C29140C3600567BC1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA5C5D29140C5900567BC1 /* ChatDataSource.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4BA5C3D2913AA8000567BC1 /* PoCIVSChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BA5C4C2913AA8100567BC1 /* Build configuration list for PBXNativeTarget "PoCIVSChat" */;
+			buildPhases = (
+				D4BA5C3A2913AA8000567BC1 /* Sources */,
+				D4BA5C3B2913AA8000567BC1 /* Frameworks */,
+				D4BA5C3C2913AA8000567BC1 /* Resources */,
+				D4BA5C532913AC3E00567BC1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoCIVSChat;
+			productName = PoCIVSChat;
+			productReference = D4BA5C3E2913AA8000567BC1 /* PoCIVSChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4BA5C362913AA8000567BC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D4BA5C3D2913AA8000567BC1 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D4BA5C392913AA8000567BC1 /* Build configuration list for PBXProject "PoCIVSChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4BA5C352913AA8000567BC1;
+			productRefGroup = D4BA5C3F2913AA8000567BC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4BA5C3D2913AA8000567BC1 /* PoCIVSChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4BA5C3C2913AA8000567BC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA5C492913AA8100567BC1 /* Preview Assets.xcassets in Resources */,
+				D4BA5C462913AA8100567BC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4BA5C3A2913AA8000567BC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BA5C5B29140A2000567BC1 /* MessageBar.swift in Sources */,
+				D4BA5C442913AA8000567BC1 /* ContentView.swift in Sources */,
+				D4BA5C59291407CE00567BC1 /* SendButton.swift in Sources */,
+				D4BA5C422913AA8000567BC1 /* PoCIVSChatApp.swift in Sources */,
+				D4BA5C6029140E3E00567BC1 /* MessageRow.swift in Sources */,
+				D4BA5C6229140F1B00567BC1 /* MessageList.swift in Sources */,
+				D4BA5C5E29140C5900567BC1 /* ChatDataSource.swift in Sources */,
+				D4BA5C56291401BF00567BC1 /* TokenRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D4BA5C4A2913AA8100567BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4BA5C4B2913AA8100567BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4BA5C4D2913AA8100567BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PoCIVSChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 4QCD6RJ9J5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colkie.pocs.chatIvs.PoCIVSChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4BA5C4E2913AA8100567BC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PoCIVSChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 4QCD6RJ9J5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colkie.pocs.chatIvs.PoCIVSChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4BA5C392913AA8000567BC1 /* Build configuration list for PBXProject "PoCIVSChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BA5C4A2913AA8100567BC1 /* Debug */,
+				D4BA5C4B2913AA8100567BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BA5C4C2913AA8100567BC1 /* Build configuration list for PBXNativeTarget "PoCIVSChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BA5C4D2913AA8100567BC1 /* Debug */,
+				D4BA5C4E2913AA8100567BC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4BA5C362913AA8000567BC1 /* Project object */;
+}
